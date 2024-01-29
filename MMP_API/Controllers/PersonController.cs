@@ -12,7 +12,7 @@ namespace MMP_API.Controllers
         [HttpGet]
         public IEnumerable<string> GetPersons()
         {
-            return new string[] { "Test Person 1", "Test Person 1" };
+            return new string[] { "Test Person 1", "Test Person 22" };
         }
 
         // GET api/<PersonController>/5
