@@ -31,4 +31,9 @@ steps:
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    configuration: '$(buildConfiguration)' 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '/bin/Debug'
+    Contents: '**/*.*'
+    TargetFolder: '$(build.artifactstagingdirectory)'
