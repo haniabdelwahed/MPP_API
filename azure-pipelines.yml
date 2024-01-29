@@ -34,6 +34,6 @@ steps:
     configuration: '$(buildConfiguration)' 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '///D:/a/1/a'
+    SourceFolder: 'D:/a/1/a'
     Contents: '**/*.*'
     TargetFolder: '$(build.artifactstagingdirectory)'
